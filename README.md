@@ -48,6 +48,13 @@ application.
 
 ## Building
 
+* Make sure project dependencies are installed first:
+
+```
+npm install
+bower install
+```
+
 * `ember build`
 
 For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
