@@ -5,7 +5,8 @@ var fs = require('fs');
 module.exports = {
   name: 'ember-svg-sprite-sheet',
   contentFor: function(type, config) {
-    if(type === 'body') {
+
+    if(type === 'body-footer') {
       var svgPath = this.app.options["ember-svg-sprite-sheet"].path;
       if(svgPath) {
         return fs.readFileSync(svgPath).toString();
